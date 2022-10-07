@@ -1,0 +1,66 @@
+* {
+    border: 2px solid blue;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+body {
+    background-color: #FAA7C9;
+}
+footer {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    color: white;
+}
+h1:hover {
+    color: black;
+}
+
+.quote {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.credit {
+    font-size: 1.5em;
+}
+.four-principles {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin:  auto;
+}
+.because {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
