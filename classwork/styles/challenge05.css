@@ -1,0 +1,18 @@
+
+footer img {
+    width: 200px;
+    border-radius: 50%;
+    border: 12px solid #5A5A5A;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+.hero img{
+    width: 1980px;
+    margin: 0 auto;
+}
+
+body, footer {
+    background-color: grey;
+    margin: 0 auto;
+}
