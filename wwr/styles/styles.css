@@ -18,6 +18,7 @@
     padding: 8px;
 }
 
+
 .hero-message h1, .hero-message h4 {
     text-align: center;
     font-family: 'RocknRoll One', 'Bradley Hand', sans-serif;
@@ -69,6 +70,14 @@
 .rivers_card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
+.mountains {
+    padding: 10px;
+    margin: 20px;
+}
+#mountain-box {
+    text-align: center;
+}
+
 
 main section {
     text-align: center;
