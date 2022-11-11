@@ -1,0 +1,51 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.text p {
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: #555555;
+    margin: auto;
+}
+.text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.main-sect {
+    text-align: center;
+}
+.main-sect h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-sect h4 {
+    color: steelblue;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: orange;
+}
+.box-button {
+    margin: 1px;
+    background-color: steelblue;
+    text-align: center;
+    color: azure;
+}
+.box-button h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.box-button p {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
