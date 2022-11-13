@@ -1,5 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=RocknRoll+One&display=swap');
 
+
+#logo-and-menu {
+    background-color: #617db7;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+#logo-link {
+    padding: 8px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 180px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    background-color: #b78734;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+nav a:hover {
+    background-color: #6ac5be;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #402C1A;
+    color: #6ac5be;
+    padding: 25px 50px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer a {
+    background-color: #402C1A;
+    color: #6ac5be;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer a:hover {
+    background-color: #b78734;
+    text-decoration: underline;
+}
+footer .socials img {
+    padding-top: 15px;
+}
+
+/*THE ABOVE ITEMS ARE THE HEADER AND FOOTER*/
+/*these should remain the same across all pages*/
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -26,11 +88,6 @@
     grid-row: 1/3;
     z-index: -1;
 }
-#logo-link {
-    padding: 8px;
-    justify-self: center;
-    align-self: center;
-}
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -44,11 +101,7 @@
     font-family: 'RocknRoll One', 'Bradley Hand', sans-serif;
     color: white;
 }
-#logo-and-menu {
-    background-color: #617db7;
-    display: grid;
-    grid-template-columns: 200px auto;
-}
+
 
 .button-box {
     text-align: center;
@@ -65,9 +118,8 @@
     color: white;
     padding-bottom: 15px;
 }
-.logo {
-    width: 180px;
-}
+
+
 .icon {
     width: 80px;
     padding-top: 10px;
@@ -145,47 +197,187 @@ h2 {
 h4 {
     color: black;
 }
-nav {
+
+
+/*THE ABOVE IS FOR THE HOME PAGE*/
+/*Below are elements belonging to subpages*/
+
+
+/*THE FOLLOWING CONSISTS OF THE RAFTING OPTIONS PAGE (options-for-rafting.html)*/
+#one-seven-one-main {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.orange-rectangle {
+    display: grid;
+    grid-template-columns: 90px 300px 50px auto;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    height: 650px;
+    background-color: #b78734;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.blue-rectangle {
+    display: grid;
+    grid-template-columns: 90px 300px 50px auto;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    height: 650px;
+    background-color: #617db7;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.to-the-bottom-flex {
     display: flex;
     justify-content: space-around;
 }
-nav a {
-    text-align: center;
-    background-color: #b78734;
-    color: black;
+.FINAL-BUTTON {
+    background-color: #402C1A;
+    color: white;
     text-decoration: none;
-    padding: 15px 30px;
-    margin-top: 40px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 5px;
 }
-nav a:hover {
+.FINAL-BUTTON:hover {
+    color: black;
     background-color: #6ac5be;
     text-decoration: underline;
 }
-footer {
+#salmon-river {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#desolation-gray {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#grand-canyon {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+#salmonR, #desolG, #grandC {
+    border: 10px solid #6ac5be;
+    transition: transform .5s;
+    
+    align-self: center;
+    grid-column: 2/3;
+}
+#salmonR:hover, #desolG:hover, #grandC:hover {
+    transform: scale(1.1);
+}
+#salmon-text, #desolation-text, #grand-text {
+    text-align: center;
+    grid-column: 4/5;
+}
+#salmon-text h1, #desolation-text h1, #grand-text h1 {
+    font-size: 3em;
+    font-family: 'RocknRoll One', 'Bradley Hand', sans-serif;
+}
+#salmon-text p, #desolation-text p, #grand-text p {
+    font-size: 1.4em;
+    grid-column: 4/5;
+}
+
+
+
+
+/*THIS IS PART OF THE CONTACT US PAGE (contactus.html)*/
+#mainard {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     background-color: #402C1A;
-    color: #6ac5be;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+}
+#background-noise {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+#background-noise img {
+    width: 100%;
 
 }
-footer a {
-    background-color: #402C1A;
-    color: #6ac5be;
-    text-decoration: none;
+/*THE ABOVE IS MY OWN CODE, WHILE THE BELOW WAS PROVIDED BY W3SCHOOLS*/
+/* With minor adjustments by me */
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-footer p {
-    font-size: 1.2em;
+  
+    /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #6ac5be;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-footer a:hover {
-    background-color: #b78734;
-    text-decoration: underline;
+  
+    /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
 }
-footer .socials img {
-    padding-top: 15px;
+  
+    /* Add a background color and some padding around the form */
+.container {
+    border-radius: 9px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    grid-row: 2/3;
+    grid-column: 2/3;  /*the two grid items were my contribution, along with changing the color of the button*/
 }
+
+
+/*THIS IS THE FINAL PAGE (purchase.html)*/
+#rickroll {
+    width: 100%;
+  }
+    /* Add some content at the bottom of the video/page */
+.rickrolltext {
+    grid-row: 2/3;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+    /* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+/*THE ABOVE WAS GENEROUSELY PROVIDED BY W3SCHOOLS EXAMPLES (minor tweaks by me)*/
+/* This trololol code was my addition to what code was already provided */
+#trololol {
+    display: grid;
+    grid-template-rows: auto 200px;
+    grid-template-columns: 100%;
+}
+
+
+/*THE BELOW ITEMS ARE MEDIA QUIERIES*/
 
 
 
@@ -235,5 +427,8 @@ footer .socials img {
     }
     footer {
         margin-top: 25px;
+    }
+    #contacting-feet {
+        margin-top: 0;
     }
 }
