@@ -302,8 +302,23 @@ h4 {
     width: 100%;
 
 }
-/*THE ABOVE IS MY OWN CODE, WHILE THE BELOW WAS PROVIDED BY W3SCHOOLS*/
+/*THE ABOVE IS MY OWN CODE, WHILE THE BELOW WAS PROVIDED BY W3SCHOOLS AAAAAAANNND MY TEACHER MR.JAMES WARNER */
 /* With minor adjustments by me */
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
     /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
