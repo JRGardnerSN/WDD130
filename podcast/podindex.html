@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <header>
+        <div id="banner-image">
+            <img src="images/banner.jpg" alt="cavern">
+        </div>
+        <img id="logo" src="images/cavern_logo.png" alt="logo">
+        <div id="menu-buttons"></div>
+        <div id="search-bar"></div>
+    </header>
+    <main>
+        <video autoplay loop id="featured-pod">
+            <source src="images/Battle of Heroes (Duel on Mustafar).mp4" type="video/mp4">
+        </video>
+        <h1>TEST VIDEO</h1>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+        <script>
+            var video = document.getElementById("featured-pod");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+        </script>
+    </main>
+    <footer>
+        <p>Raftin Rapids Team ©2022 - Joshua Gardner</p>
+        <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
