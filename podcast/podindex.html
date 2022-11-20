@@ -9,18 +9,31 @@
 </head>
 <body>
     <header>
-        <div id="banner-image">
-            <img src="images/banner.jpg" alt="cavern">
+        <div id="banner">
+            <img id="banner-image" src="images/banner.jpg" alt="cavern">
+            <h1 id="banner-welcome-text">WELCOME TO THE CAVERN</h1>
         </div>
         <img id="logo" src="images/cavern_logo.png" alt="logo">
-        <div id="menu-buttons"></div>
-        <div id="search-bar"></div>
+        <div id="menu-buttons">
+            <nav>
+                <a href="index.html"><img id="home-house" src="images/home.png" alt="">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="fan-mail.html">Send Fan Mail</a>
+                <a href="other.html">Other</a>
+            </nav>
+        </div>
+        <div id="search-bar">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search">
+                <button type="submit"> <img id="search-glass" src="images/search.png"> </button>
+            </form>
+        </div>
     </header>
     <main>
         <video autoplay loop id="featured-pod">
             <source src="images/Battle of Heroes (Duel on Mustafar).mp4" type="video/mp4">
         </video>
-        <h1>TEST VIDEO</h1>
+        <h1>FEATURED EPISODE (test)</h1>
         <button id="myBtn" onclick="myFunction()">Pause</button>
         <script>
             var video = document.getElementById("featured-pod");
@@ -36,11 +49,23 @@
               }
             }
         </script>
+
+        <div id="episode-list">
+            <ul>
+                <li><a href="episode.html">Episode 7</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <li><a href="episode.html">Episode 6</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <li><a href="episode.html">Episode 5</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <li><a href="episode.html">Episode 4</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <li><a href="episode.html">Episode 3</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <li><a href="episode.html">Episode 2</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <li><a href="episode.html">Episode 1</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+              </ul>
+        </div>
     </main>
     <footer>
-        <p>Raftin Rapids Team ©2022 - Joshua Gardner</p>
+        <p>The Cavern Of Thoughtful Idiots ©2022 - Joshua Gardner</p>
         <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
+        <p><a href="contact-opt.html">Contact Options</a></p>
         <div class="socials">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="facebook icon">
