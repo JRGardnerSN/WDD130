@@ -1,11 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Underdog&display=swap');
+
 footer {
+    font-family: Lato, "GFS Didot";
     background-color: #3D2D1E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 40px;
+}
+footer a {
+    font-family: Lato, "GFS Didot";
+    text-decoration: none;
+    color: #FFEE2F;
 }
 #search-glass {
     width: 20px;
 }
 #home-house {
     width: 20px;
+}
+#banner-image {
+    margin: 0 auto;
+    width: 1920px;
+    height: 450px;
+    object-fit: cover;
+}
+#logo {
+    height: 250px;
+    border-radius: 25px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+#menu-buttons {
+    grid-column: 3/6;
+    grid-row: 5/6;
+}
+#banner-welcome-text {
+    font-family: "Underdog";
+    font-size: 7em;
+    color: #FFEE2F;
+    grid-column: 5/7;
+    grid-row: 1/2;
+}
+#search-bar {
+    grid-column: 6/7;
+    grid-row: 5/6;
+}
+nav a {
+    text-align: center;
+    background-color: #DA300E;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+header {
+    font-family: Lato, "GFS Didot";
+    /* background-color: #01010A; */
+    display: grid;
+    grid-template-columns: 25px 125px 125px 125px 1195px 300px 25px;
+    grid-template-rows: 25px 250px 25px 50px 100px 25px;
+}
+main {
+    font-family: Lato, "GFS Didot";
+    text-align: center;
+}
+main h1 {
+    font-family: Lato, "Underdog";
+    color: #FFEE2F;
+    font-size: 3em;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+video {
+    width: 1000px;
+    grid-column: 2/4;
+}
+#myBtn {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    z-index: 1;
+}
+/*I WILL FIX THIS LATER*/
+/*
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Video_player_styling_basics
+*/
+/* .progress {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    cursor: pointer;
+    width: 75.390625%;
+    display: block;
+    width: 100%;
+    height: 81%;
+    margin-top: 0.125rem;
+    border: none;
+    color: #0095dd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+} */
+#featured {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 460px 100px 900px 460px;
+    grid-template-rows: 112px 112px 112px 112px 112px;
+}
+#episode-list {
+    padding: 15px 30px;
+    font-size: 1.4em;
+}
+#episode-list ul {
+    margin-left: 300px;
+    margin-right: 200px;
+    list-style: none;
+    padding: 15px 30px;
+}
+#episode-list a {
+    text-decoration: none;
+    color: #FFEE2F;
+    background-color: #DA300E;
+    padding: 15px 30x;
+}
+#episode-list li {
+    padding: 15px 30x;
+    color: white;
+    background-color: #01010A;
 }
 
 /* 
