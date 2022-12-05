@@ -148,6 +148,9 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Vide
     padding: 15px 30px;
     font-size: 1.4em;
 }
+li {
+    border: solid #FFEE2F;
+}
 #episode-list ul {
     margin-left: 300px;
     margin-right: 200px;
@@ -159,6 +162,9 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Vide
     color: #FFEE2F;
     background-color: #DA300E;
     padding: 15px 30px;
+}
+#episode-list a:hover {
+    opacity: 0.8;
 }
 #episode-list li {
     padding: 15px 30px;
