@@ -9,10 +9,14 @@
 </head>
 <body>
     <header>
-        <div id="banner">
-            <img id="banner-image" src="images/banner.jpg" alt="cavern">
-            <h1 id="banner-welcome-text">WELCOME TO THE CAVERN</h1>
-        </div>
+        <style>
+            header {
+               background-image: url("images/banner.jpg");
+               background-repeat: no-repeat;
+               background-size: 100%;
+            }
+        </style>
+        <h1 id="banner-welcome-text">Welcome to the Cavern</h1>
         <img id="logo" src="images/cavern_logo.png" alt="logo">
         <div id="menu-buttons">
             <nav>
@@ -25,7 +29,7 @@
         <div id="search-bar">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search">
-                <button type="submit"> <img id="search-glass" src="images/search.png"> </button>
+                <button type="submit"> <img id="search-glass" src="images/search.png" alt="Search"> </button>
             </form>
         </div>
     </header>

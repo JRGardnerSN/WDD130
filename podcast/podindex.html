@@ -9,10 +9,14 @@
 </head>
 <body>
     <header>
-        <div id="banner">
-            <img id="banner-image" src="images/banner.jpg" alt="cavern">
-            <h1 id="banner-welcome-text">WELCOME TO THE CAVERN</h1>
-        </div>
+        <style>
+            header {
+               background-image: url("images/banner.jpg");
+               background-repeat: no-repeat;
+               background-size: 100%;
+            }
+        </style>
+        <h1 id="banner-welcome-text">Welcome to the Cavern</h1>
         <img id="logo" src="images/cavern_logo.png" alt="logo">
         <div id="menu-buttons">
             <nav>
@@ -25,39 +29,52 @@
         <div id="search-bar">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search">
-                <button type="submit"> <img id="search-glass" src="images/search.png"> </button>
+                <button type="submit"> <img id="search-glass" src="images/search.png" alt="Search"> </button>
             </form>
         </div>
     </header>
     <main>
-        <video autoplay loop id="featured-pod">
-            <source src="images/Battle of Heroes (Duel on Mustafar).mp4" type="video/mp4">
-        </video>
-        <h1>FEATURED EPISODE (test)</h1>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-        <script>
-            var video = document.getElementById("featured-pod");
-            var btn = document.getElementById("myBtn");
-            
-            function myFunction() {
-              if (video.paused) {
-                video.play();
-                btn.innerHTML = "Pause";
-              } else {
-                video.pause();
-                btn.innerHTML = "Play";
-              }
-            }
-        </script>
-
+        <div id="featured">
+            <video autoplay loop id="featured-pod">
+                <source src="images/Battle of Heroes (Duel on Mustafar).mp4" type="video/mp4">
+            </video>
+            <h1>FEATURED EPISODE (test)</h1>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <script>
+                var video = document.getElementById("featured-pod");
+                var btn = document.getElementById("myBtn");
+                
+                function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+                }
+            </script>
+        <!--WILL WORK ON LATER-->
+        <!-- <div class="progress">
+                <progress id="progress" value="0" min="0">
+                  <span id="progress-bar"></span>
+                </progress>
+            </div> -->
+        </div>
         <div id="episode-list">
             <ul>
                 <li><a href="episode.html">Episode 7</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <br>
                 <li><a href="episode.html">Episode 6</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <br>
                 <li><a href="episode.html">Episode 5</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <br>
                 <li><a href="episode.html">Episode 4</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <br>
                 <li><a href="episode.html">Episode 3</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <br>
                 <li><a href="episode.html">Episode 2</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
+                <br>
                 <li><a href="episode.html">Episode 1</a> || [Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut]</li>
               </ul>
         </div>
