@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Underdog&display=swap');
+<<<<<<< HEAD
 body {
     margin: 0;
 }
+=======
+
+>>>>>>> e6944905a788e7c832cdcdda267e2e8e552d8f14
 footer {
     font-family: Lato, "GFS Didot";
     background-color: #3D2D1E;
@@ -9,7 +13,11 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: white;
+<<<<<<< HEAD
     padding: 10em;
+=======
+    padding: 40px;
+>>>>>>> e6944905a788e7c832cdcdda267e2e8e552d8f14
 }
 footer a {
     font-family: Lato, "GFS Didot";
@@ -22,12 +30,23 @@ footer a {
 #home-house {
     width: 20px;
 }
+<<<<<<< HEAD
 #banner {
     display: none;
     }
 #logo {
     height: 250px;
     border: solid white;
+=======
+#banner-image {
+    margin: 0 auto;
+    width: 1920px;
+    height: 450px;
+    object-fit: cover;
+}
+#logo {
+    height: 250px;
+>>>>>>> e6944905a788e7c832cdcdda267e2e8e552d8f14
     border-radius: 25px;
     grid-column: 2/4;
     grid-row: 2/3;
@@ -56,12 +75,19 @@ nav a {
 }
 header {
     font-family: Lato, "GFS Didot";
+<<<<<<< HEAD
     background-image: url(images/banner.jpeg);
     display: grid;
     margin-bottom: 40px;
     height: 600px;
     grid-template-columns: 1fr 5fr 5fr 5fr 47.8fr 12fr 1fr;
     grid-template-rows: 1fr 10fr 1fr 2fr 4fr 1fr;
+=======
+    /* background-color: #01010A; */
+    display: grid;
+    grid-template-columns: 25px 125px 125px 125px 1195px 300px 25px;
+    grid-template-rows: 25px 250px 25px 50px 100px 25px;
+>>>>>>> e6944905a788e7c832cdcdda267e2e8e552d8f14
 }
 main {
     font-family: Lato, "GFS Didot";
@@ -83,6 +109,7 @@ video {
     grid-row: 5/6;
     z-index: 1;
 }
+<<<<<<< HEAD
 
 /*about-us.html*/
 .grid-host-area {
@@ -119,6 +146,8 @@ video {
     grid-template-columns: 12% 20% 12% 44% 12%;
 }
 
+=======
+>>>>>>> e6944905a788e7c832cdcdda267e2e8e552d8f14
 /*I WILL FIX THIS LATER*/
 /*
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Video_player_styling_basics
