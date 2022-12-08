@@ -33,8 +33,55 @@
             </form>
         </div>
     </header>
-    <main>
-        <form action="other.html">
+    <main id="fan-mail-grid">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="fit-screen-img" src="images/cave-beach.jpg" alt="1">
+                <div class="text">Trial</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="fit-screen-img" src="images/Jacub-gomez.jpg" alt="2">
+                <div class="text">Travail</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="fit-screen-img" src="images/cave-light.jpg" alt="3">
+                <div class="text">Triumph</div>
+            </div>
+
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 15000); // Change image every 2 seconds
+            }
+        </script>
+
+        <div id="dots-std" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <form id="fan-mail-from-fans-form" action="other.html">
           
             <label for="name">Name</label>
             <input type="text" id="name" name="user_name" placeholder="*Optional">
@@ -48,7 +95,6 @@
             <input type="submit" value="Submit">
         
         </form>
-        <img src="images/cavern-mail.jpg" alt="">
     </main>
     <footer>
         <p>The Cavern Of Thoughtful Idiots ©2022 - Joshua Gardner</p>
