@@ -25,6 +25,7 @@ footer a {
     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
 }
 #search-btn {
+/*I can't figure out how to fix the button so I'll leave it for now.*/
     padding: 0;
     border: 0;
     outline: #01010A solid;
@@ -157,6 +158,7 @@ li {
 }
 .norm-the-rbot-p {
     grid-column: 4/5;
+    outline: #DA300E solid;
 }
 #host-number-one {
     padding-top: 5em;
